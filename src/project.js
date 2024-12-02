@@ -1,7 +1,16 @@
-export function createProject(name) {
-    let reputation = 0;
-    const giveReputation = () => reputation++;
-    const getReputation = () => reputation;
-    
-    return { name, giveReputation, getReputation };
+import Task from './task.js'
+
+class Project {
+    constructor(name, id) {
+        this.id = id;
+        this.name = name;
+    }
+
+    taskList = [];
+
+    appendTask() {
+        this.taskList.push();
+    }
 }
+
+export default Project;
